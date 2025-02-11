@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title_block %}Rango{% endblock %}</title>
+    <!-- Add your CSS and JavaScript links here -->
+</head>
+<body>
+    <header>
+        <h1>Rango</h1>
+        <nav>
+            <a href="{% url 'rango:index' %}">Home</a>
+            <!-- Add other navigation links here -->
+        </nav>
+    </header>
+
+    <main>
+        {% block body_block %}
+        <!-- Default content can go here -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Rango</p>
+    </footer>
+</body>
+</html>
